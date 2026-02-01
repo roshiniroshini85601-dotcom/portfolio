@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roshini | About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png.png">
+    </div>
+
+    <ul id="sidemenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <i class="fas fa-times" onclick="closemenu()"></i>
+    </ul>
+
+    <i class="fas fa-bars" onclick="openmenu()"></i>
+  </nav>
+</div>
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col1">
+        <img src="images/aboutme.png.png">
+      </div>
+
+      <div class="about-col2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          I am a final-year B.Tech Information Technology student with a strong
+          interest in frontend development. I enjoy building responsive,
+          user-friendly web applications.
+        </p>
+
+        <div class="title">
+          <p class="tl active" onclick="opentab('skills')">Skills</p>
+          <p class="tl" onclick="opentab('education')">Education</p>
+          <p class="tl" onclick="opentab('experience')">Experience</p>
+        </div>
+
+        <div class="titlecontent active-title" id="skills">
+          <ul>
+            <li><span>HTML</span><br>Semantic & accessible structure</li>
+            <li><span>CSS</span><br>Responsive layouts & animations</li>
+            <li><span>JavaScript</span><br>Interactive UI development</li>
+          </ul>
+        </div>
+
+        <div class="titlecontent" id="education">
+          <ul>
+            <li><span>2022 – 2026</span><br>B.Tech – IT</li>
+            <li><span>2021 – 2022</span><br>Higher Secondary</li>
+            <li><span>2019 – 2020</span><br>SSLC</li>
+          </ul>
+        </div>
+
+        <div class="titlecontent" id="experience">
+          <ul>
+            <li><span>Fresher</span><br>Seeking entry-level opportunities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
